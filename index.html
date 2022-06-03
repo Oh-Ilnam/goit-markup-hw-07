@@ -491,24 +491,24 @@
       </footer>
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-          <button class="modal-close" data-modal-close></button>
+          <button class="modal__close" data-modal-close></button>
           <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
           <form class="modal__field-conteiner">
             <div class="modal__field">
               <label for="user-name" class="modal__label"
-                ><span class="input-text">Имя</span></label
+                ><span class="modal-input__text">Имя</span></label
               >
-              <div class="modal-icon-position">
+              <div class="modal-icon__position">
                 <input
                   type="text"
-                  class="modal-input"
+                  class="modal-icon__input"
                   name="user-name"
                   id="user-name"
                   placeholder=""
                   required
                   minlength="2"
                   title="Введите имя"
-                /><svg class="user-name-icon" width="18" height="18">
+                /><svg class="modal-icon__name" width="18" height="18">
                   <use
                     href="./images/symbol-defs.svg#icon-person-black-18dp-1"
                   ></use>
@@ -517,12 +517,12 @@
             </div>
             <div class="modal__field">
               <label for="user-tel" class="modal__label"
-                ><span class="input-text">Телефон</span></label
+                ><span class="modal-input__text">Телефон</span></label
               >
-              <div class="modal-icon-position">
+              <div class="modal-icon__position">
                 <input
                   type="tel"
-                  class="modal-input"
+                  class="modal-icon__input"
                   name="user-tel"
                   id="user-tel"
                   placeholder=""
@@ -531,7 +531,7 @@
                   minlength="15"
                   maxlength="17"
                   required
-                /><svg class="user-name-icon" width="18" height="18">
+                /><svg class="modal-icon__name" width="18" height="18">
                   <use
                     href="./images/symbol-defs.svg#icon-phone-black-18dp-1"
                   ></use>
@@ -540,18 +540,18 @@
             </div>
             <div class="modal__field">
               <label for="user-email" class="modal__label"
-                ><span class="input-text">Почта</span></label
+                ><span class="modal-input__text">Почта</span></label
               >
-              <div class="modal-icon-position">
+              <div class="modal-icon__position">
                 <input
                   type="email"
-                  class="modal-input"
+                  class="modal-icon__input"
                   name="user-email"
                   id="user-email"
                   placeholder=""
                   title="info@devstudio.com"
                   required
-                /><svg class="user-name-icon" width="18" height="18">
+                /><svg class="modal-icon__name" width="18" height="18">
                   <use
                     href="./images/symbol-defs.svg#icon-email-black-18dp-1"
                   ></use>
@@ -560,10 +560,10 @@
             </div>
             <div class="modal__field">
               <label for="user-comment" class="modal__label"
-                ><span class="input-text">Комментарий</span></label
+                ><span class="modal-input__text">Комментарий</span></label
               >
               <textarea
-                class="modal-comment"
+                class="modal__comment"
                 name="user-comment"
                 id="user-comment"
                 cols="30"
@@ -571,24 +571,24 @@
                 placeholder="Введите текст"
               ></textarea>
             </div>
-            <div class="modal-field-checkbox">
+            <div class="modal-field__checkbox">
               <input
-                class="modal-checkbox is-hidden"
+                class="modal__checkbox is-hidden"
                 name="user-check"
                 type="checkbox"
                 id="user-check"
               />
-              <label class="user-check" for="user-check">
-                <span class="user-check-text"
+              <label class="modal-user__check" for="user-check">
+                <span class="modal-user__text"
                   >Соглашаюсь с рассылкой и принимаю
-                  <a class="agreement-conditions" href=""
+                  <a class="modal-agreement__conditions" href=""
                     >Условия договора</a
                   ></span
                 ></label
               >
             </div>
-            <button type="submit" class="modal-send-btn">
-              <span class="modal-btn-text">Отправить</span>
+            <button type="submit" class="modal-send__btn">
+              <span class="modal-btn__text">Отправить</span>
             </button>
           </form>
         </div>
